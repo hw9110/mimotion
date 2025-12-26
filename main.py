@@ -227,8 +227,8 @@ def execute():
                 if idx < total:
                     # 每个账号之间间隔一定时间请求一次，避免接口请求过于频繁导致异常
                     time.sleep(sleep_seconds)
-        if encrypt_support:
-            persist_user_tokens()
+        #if encrypt_support:
+            #persist_user_tokens()
         success_count = 0
         push_results = []
         for result in exec_results:
